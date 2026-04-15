@@ -1,0 +1,64 @@
+:root {
+  --bg-color: #f4f1ea;
+  --text-color: #1f2937;
+  --muted-color: #6b7280;
+  --border-color: rgba(255, 255, 255, 0.9);
+  --shadow-color: rgba(31, 41, 55, 0.12);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Section */
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background:
+    radial-gradient(circle at top left, #fff6e9 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #e5efe8 0%, transparent 30%),
+    var(--bg-color);
+  padding: 20px;
+}
+
+/* Lyrics Container */
+.lyrics-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual Lyric Div */
+div[id^="lyrics"] {
+  background: var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+div[id^="lyrics"] p {
+  line-height: 1.6;
+  color: var(--muted-color);
+}
+
+div[id^="lyrics"] h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+div[id^="lyrics"] h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div[id^="lyrics"] h3 a:hover {
+  color: var(--muted-color);
+}
